@@ -4,3 +4,5 @@ module.exports =
 
   serve: ->
     editor = atom.workspace.activePaneItem
+    selection = editor.getSelection()
+    selection.insertText("Hello World!")
