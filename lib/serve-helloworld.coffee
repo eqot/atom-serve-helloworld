@@ -8,13 +8,12 @@ module.exports =
 
   start: ->
     editor = atom.workspace.activePaneItem
-    # selection = editor.getSelection()
-    # selection.insertText("Hello World!")
+    text = editor.getText()
 
     http = require 'http'
     server = http.createServer (req, res) =>
       res.writeHead 200, {'Content-Type': 'text/plain'}
-      res.end 'Hello World!\n'
+      res.end text
     server.listen 8000, '127.0.0.1'
 
     console.log('Server started.')
