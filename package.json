@@ -3,7 +3,7 @@
   "main": "./lib/serve-helloworld",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "activationEvents": ["serve-helloworld:serve"],
+  "activationEvents": ["serve-helloworld:start", "serve-helloworld:stop"],
   "repository": "https://github.com/atom/serve-helloworld",
   "license": "MIT",
   "engines": {
