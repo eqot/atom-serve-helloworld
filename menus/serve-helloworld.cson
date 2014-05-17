@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable serve-helloworld': 'serve-helloworld:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'serve-helloworld'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'serve-helloworld:toggle' }
+      ]
+    ]
+  }
+]
