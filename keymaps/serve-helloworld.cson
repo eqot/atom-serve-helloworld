@@ -8,4 +8,5 @@
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
 '.workspace':
-  'ctrl-alt-a': 'serve-helloworld:serve'
+  'ctrl-alt-a': 'serve-helloworld:start'
+  'ctrl-alt-shift-a': 'serve-helloworld:stop'
